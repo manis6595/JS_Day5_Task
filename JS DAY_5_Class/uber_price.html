@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Uber {
+        constructor (distance,rate,waitingtime) {
+            this.distance = distance;
+            this.rate = rate;
+            this.waitingtime = waitingtime;
+        }
+         getPrice(){
+      
+            let price = (this.distance * this.rate) + (5 * this.waitingtime)
+            return price;
+        }
+    }
+        const uber = new Uber(45,80,15)
+        const uber1 = new Uber(90,40,2)
+        console.log(uber.getPrice());
+</script>
+<body>
+    
+</body>
+</html>
